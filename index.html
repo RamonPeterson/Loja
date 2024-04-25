@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja associado </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="js.js">
+    <link rel="preconnect" href="htpps://fonts.gstatic.com">
+
+</head>
+<body>
+    <!-- navbar -->
+    <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="logo/R-_2_.ico" type="image/x-icon">    
+    <title>RPAC</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <!-- navbar titulo-->
+        <input type ="checkbox" name ="logos" id ="chk1">
+        <div class="logo" id="Home"><h1>RPAC</h1></div>
+            <!--barra pesquisa-->
+            <div class="search-box">
+                <form>
+                    <input type ="text" name ="search" id ="srch" placeholder="Search">
+                    <button type ="submit"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+            <!-- caminhos-->
+            <ul>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#">Loja</a></li>
+                <li><a href="#">Cursos</a></li>
+                <li><a href="#">Contatos</a></li>
+                <!--redes sociais navbar-->
+                <li>
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-instagram"></i></a>
+                      
+                </li>
+            </ul>
+            <!--botao responsivo-->
+            <div class="menu">
+                <label for="chk1">
+                    <i class="fa fa-bars"></i>
+                </label>
+            </div>
+            <!--fin navbar-->
+
+    
+    </header>
+    <br><br><br>
+    <div class="container" id="section">
+        <div class="image-container">
+            <img src="imagens/homem-feliz-com-bolsas-dancando-depois-das-compras_482257-18132.jpg" alt="Imagem" class="image">
+        </div>
+        <div class="text-container">
+            <div class="text">Seu Título</div>
+            <div class="subtext">Seu subtexto</div>
+        </div>
+    </div>
+
+
+<script>
+    // Função para verificar se o elemento está visível na janela de visualização
+function isElementInViewport(el) {
+    var rect = el.getBoundingClientRect();
+    return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+}
+
+// Função para verificar se o elemento está visível e adicionar classe in-view
+function checkVisibility() {
+    var section = document.getElementById('section');
+    if (isElementInViewport(section)) {
+        section.classList.add('in-view');
+    }
+}
+
+// Verifica a visibilidade quando a página é carregada e ao rolar
+window.addEventListener('DOMContentLoaded', checkVisibility);
+window.addEventListener('scroll', checkVisibility);
+</script>
+
+    
+
+
+
+
+  
+        
+
+
+
+  
+</body>
+</html>
+
+</body>
+</html>
